@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tits And Shadows | Game</title>
+    <link rel="stylesheet" href="styleESP.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="media/icoT&S.png" 
+    />
+</head>
+<body>
+
+    <section class="sect1">
+        <header class="header">
+            <label class="header-nav">
+                <a class="white-logo" href="#"><img src="media/logoBlanco.png" alt="Logo T&S white"></a>
+                <nav class="nav-menu">
+                    <a href="#">Acerca del juego</a>
+                    <a href="#">Historia</a>
+                    <a href="#">Compañeros de aventura</a>
+                    <a href="#">Guest Collabs</a>
+                </nav>
+                <div class="language">
+                    <select id="language-Select">
+                        <option value="eng">ENG</option>
+                        <option value="esp" selected>ESP</option>
+                        <option value="jpn">日本語</option>
+                    </select>
+                </div>
+            </label>
+        </header>
+                <label class="left-top-items">
+                    <img class="color-logo" src="media/logocolor.png" alt="Logo T&S color">
+                    <h1><a href="https://www.newgrounds.com/portal/view/876537?updated=1680641482" class="play-button" target="_blank">¡JUGAR AHORA!</a></h1>
+                    <img class="plataforms" src="media/Plataforms.png" alt="plataformas">
+                </label>
+                <div></div>
+                <label class="steam-logo">
+                    <h1>Próximamente en </h1>
+                    <img src="media/steamLogo.png" alt="Steam logo">
+                </label>
+    </section>
+    <script>
+        // Obtén el elemento select
+        var languageSelect = document.getElementById('language-Select');
+
+        // Agrega un evento change al select
+        languageSelect.addEventListener('change', function() {
+        // Obtiene el valor seleccionado
+        var selectedLanguage = languageSelect.value;
+
+        // Redirige al usuario a la página correspondiente
+        if (selectedLanguage === 'eng') {
+            window.location.href = 'index.html';
+        } else if (selectedLanguage === 'esp') {
+            window.location.href = 'Lang=ES.html';
+        }else if (selectedLanguage === 'jpn'){
+            window.location.href = 'Lang=日本語.html'
+        }
+        });
+      </script>
+</body>
+</html>
