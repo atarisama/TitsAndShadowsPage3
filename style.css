@@ -11,10 +11,15 @@ a{
     margin: 0 auto;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Rockwell Condensed', Arial, sans-serif;
     color: #fff;
+    background-color: #613799;
 }
+/*Sección 1*/
 .sect1{
     width: 100%;
     height: 100vh;
@@ -102,4 +107,96 @@ label.steam-logo{
     font-size: 30px;
     margin: 0;
     padding: 0;
+}
+/*Sección 2*/
+.sect2{
+    background-color: #613799;
+    margin: 30px 30px;
+}
+label.sect2{
+    justify-content: center;
+    text-align: justify;
+    display: flexbox;
+}
+.h2sect2{
+    font-size: 40px;
+    margin-top: 20px;
+    margin: auto 10vw;
+}
+.psect2{
+    font-size: 25px;
+    margin: auto 10vw;
+}
+.h2themes{
+    font-size: 30px;
+    margin-top: 20px;
+    margin: auto 10vw;
+}
+.themes-list{
+    font-size: 25px;
+    list-style: none;
+    margin: auto 10vw;
+}
+.trailer{
+    margin-top: 5vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 40vw;
+    height: 25vw;
+}
+
+/* Sección 3*/
+.sect3{
+    width: 100%;
+    height: 100vh;
+    background: url(media/BGTitleGame.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+div.sect3{
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding-top: 5vw;
+}
+.h2sect3{
+    font-size: 50px;
+    margin: 0px 10vw;
+    text-shadow: 1px 2px 4px rgb(0, 0, 0);
+}
+.psect3{
+    font-size: 30px;
+    margin: 0px 10vw;
+    text-shadow: 1px 2px 4px rgb(0, 0, 0);
+}
+
+/*Contenedor de imagenes*/
+.imagen-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: gray darkgray;
+    margin-bottom: 30px;
+}
+.imagen-container img {
+    display: inline-block;
+    width: 700px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: auto;
+    padding: 20px;
+}
+.imagen-container::-webkit-scrollbar {
+    width: 6px;
+}
+  
+.imagen-container::-webkit-scrollbar-track {
+    background: rgba(169, 169, 169, 0);
+    border-radius: 10px;
+}
+  
+.imagen-container::-webkit-scrollbar-thumb {
+    background-color: rgb(130, 47, 185);
+    border-radius: 10px;
 }
